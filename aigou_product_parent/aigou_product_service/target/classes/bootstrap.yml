@@ -1,0 +1,19 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  cloud:
+  datasource:
+    config:
+      discovery:
+        enabled: true
+        service-id: SPRING-CLOUD-CONFIG-SERVER
+      name: application-product
+      profile: dev
+    username: root
+    password: lxb
+    url: jdbc:mysql:///aigou_product?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver

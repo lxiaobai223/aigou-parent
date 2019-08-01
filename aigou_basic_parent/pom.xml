@@ -17,6 +17,7 @@
   <url>http://www.example.com</url>
     <modules>
         <module>aigou_basic_util</module>
+        <module>aigou_basic_genrator</module>
     </modules>
 
 

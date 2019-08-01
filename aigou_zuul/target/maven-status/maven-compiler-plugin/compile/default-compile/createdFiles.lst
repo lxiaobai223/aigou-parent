@@ -1,3 +1,4 @@
 cc\wenjun\ApplicationZuul4000.class
 cc\wenjun\config\DocumentationConfig.class
+cc\wenjun\config\GlobalCorsConfig.class
 cc\wenjun\config\SwaggerConfig.class

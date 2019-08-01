@@ -26,7 +26,6 @@ public class Swagger2 {
                 .build();
     }
 
-
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("平台服务api")
