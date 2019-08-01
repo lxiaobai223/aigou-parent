@@ -6,14 +6,14 @@ eureka:
     prefer-ip-address: true
 spring:
   cloud:
-  datasource:
     config:
       discovery:
         enabled: true
         service-id: SPRING-CLOUD-CONFIG-SERVER
       name: application-product
       profile: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///aigou_product
     username: root
     password: lxb
-    url: jdbc:mysql:///aigou_product?useUnicode=true&characterEncoding=utf8
-    driver-class-name: com.mysql.jdbc.Driver

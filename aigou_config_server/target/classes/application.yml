@@ -9,14 +9,15 @@ eureka:
 spring:
   application:
     name: spring-cloud-config-server
-#  profiles:
-#    active: native
+
+  profiles:
+      active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/lxiaobai223/aigou-config.git
-          username: qianlian9937@163.com
-          password: 770104583.com
-#        native:
-#          search-locations: C:/Users/Administrator/Desktop/aigou/lxb/aigou-config
+#        git:
+#          uri: https://github.com/lxiaobai223/aigou-config.git
+#          username: qianlian9937@163.com
+#          password: 770104583.com
+        native:
+          search-locations: F:/Java/aigou/lxb/aigou-config
