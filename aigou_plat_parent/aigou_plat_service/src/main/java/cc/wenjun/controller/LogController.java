@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class LogController {
-/*@RequestMapping(value = "/login",method = RequestMethod.GET)*/
 @PostMapping("/login")
     public AjaxResult login(@RequestBody User user){
     System.out.println(user);

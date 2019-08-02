@@ -3,6 +3,7 @@
 <mapper namespace="cc.wenjun.mapper.ProductTypeMapper">
 
     <!-- 通用查询映射结果 -->
+    <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="cc.wenjun.domain.ProductType">
         <id column="id" property="id" />
         <result column="createTime" property="createTime" />
