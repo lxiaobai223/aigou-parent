@@ -30,10 +30,6 @@
         <!--对象的映射-->
         <result column="tid" property="productType.id"/>
         <result column="tname" property="productType.name"/>
-        <!--<association property="productType" javaType="cc.wenjun.domain.ProductType">
-            <id property="id" column="tid"/>
-            <result property="name" column="tname"/>
-        </association>-->
     </resultMap>
 
     <sql id="columns">

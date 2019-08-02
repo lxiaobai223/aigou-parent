@@ -6,14 +6,16 @@ import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
  * 商品目录
  * </p>
  *
- * @author æä¿
- * @since 2019-07-31
+ * @author solargen
+ * @since 2019-07-30
  */
 @TableName("t_product_type")
 public class ProductType extends Model<ProductType> {
@@ -76,6 +78,9 @@ public class ProductType extends Model<ProductType> {
     private String seoKeywords;
 
     private Long typeTemplateId;
+
+    @TableField(exist = false)
+    private List<ProductType> children = new ArrayList<>();//子类型
 
 
     public Long getId() {
@@ -190,19 +195,27 @@ public class ProductType extends Model<ProductType> {
     @Override
     public String toString() {
         return "ProductType{" +
-        "id=" + id +
-        ", createTime=" + createTime +
-        ", updateTime=" + updateTime +
-        ", name=" + name +
-        ", pid=" + pid +
-        ", logo=" + logo +
-        ", description=" + description +
-        ", sortIndex=" + sortIndex +
-        ", path=" + path +
-        ", totalCount=" + totalCount +
-        ", seoTitle=" + seoTitle +
-        ", seoKeywords=" + seoKeywords +
-        ", typeTemplateId=" + typeTemplateId +
-        "}";
+                "id=" + id +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", name=" + name +
+                ", pid=" + pid +
+                ", logo=" + logo +
+                ", description=" + description +
+                ", sortIndex=" + sortIndex +
+                ", path=" + path +
+                ", totalCount=" + totalCount +
+                ", seoTitle=" + seoTitle +
+                ", seoKeywords=" + seoKeywords +
+                ", typeTemplateId=" + typeTemplateId +
+                "}";
+    }
+
+    public List<ProductType> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<ProductType> children) {
+        this.children = children;
     }
 }

@@ -1,14 +1,13 @@
 package cc.wenjun.controller;
 
-import cc.wenjun.service.IBrandService;
 import cc.wenjun.domain.Brand;
 import cc.wenjun.query.BrandQuery;
+import cc.wenjun.service.IBrandService;
 import cc.wenjun.util.AjaxResult;
 import cc.wenjun.util.PageList;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -81,7 +80,7 @@ public class BrandController {
     @RequestMapping(value = "/json",method = RequestMethod.POST)
     public PageList<Brand> json(@RequestBody BrandQuery query)
     {
-        IPage<Brand> page = brandService.page(new Page<Brand>(query.getPageNum(),query.getPageSize()));
-        return new PageList<>(page.getTotal(),page.getRecords());
+
+        return brandService.queryPage(query);
     }
 }

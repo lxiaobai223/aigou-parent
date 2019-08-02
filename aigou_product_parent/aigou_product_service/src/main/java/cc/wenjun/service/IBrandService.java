@@ -1,6 +1,8 @@
 package cc.wenjun.service;
 
 import cc.wenjun.domain.Brand;
+import cc.wenjun.query.BrandQuery;
+import cc.wenjun.util.PageList;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -12,5 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2019-07-31
  */
 public interface IBrandService extends IService<Brand> {
-
+    PageList<Brand> queryPage(BrandQuery query);
 }
