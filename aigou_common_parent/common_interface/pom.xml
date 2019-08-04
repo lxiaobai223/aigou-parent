@@ -12,9 +12,6 @@
     <artifactId>common_interface</artifactId>
 
     <name>common_interface</name>
-
-
-
 <dependencies>
 
     <dependency>

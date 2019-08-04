@@ -1,3 +1,4 @@
+/*
 package cc.wenjun.service;
 
 import cc.wenjun.domain.Brand;
@@ -21,4 +22,4 @@ public class BrandServiceTest {
         }
     }
 
-}
+}*/
