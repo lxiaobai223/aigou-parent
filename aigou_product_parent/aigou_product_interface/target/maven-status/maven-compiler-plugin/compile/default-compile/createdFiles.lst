@@ -1,0 +1,7 @@
+cc\wenjun\domain\ProductType.class
+cc\wenjun\domain\Brand.class
+cc\wenjun\query\ProductQuery.class
+cc\wenjun\query\BrandQuery.class
+cc\wenjun\query\ProductTypeQuery.class
+cc\wenjun\App.class
+cc\wenjun\domain\Product.class

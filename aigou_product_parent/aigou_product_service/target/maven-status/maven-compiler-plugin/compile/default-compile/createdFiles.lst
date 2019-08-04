@@ -1,0 +1,15 @@
+cc\wenjun\config\MybatisPlusConfig.class
+cc\wenjun\service\IProductTypeService.class
+cc\wenjun\service\IBrandService.class
+cc\wenjun\mapper\BrandMapper.class
+cc\wenjun\controller\ProductController.class
+cc\wenjun\ProductApplication2001.class
+cc\wenjun\mapper\ProductMapper.class
+cc\wenjun\service\impl\BrandServiceImpl.class
+cc\wenjun\controller\ProductTypeController.class
+cc\wenjun\controller\BrandController.class
+cc\wenjun\mapper\ProductTypeMapper.class
+cc\wenjun\service\impl\ProductTypeServiceImpl.class
+cc\wenjun\service\impl\ProductServiceImpl.class
+cc\wenjun\service\IProductService.class
+cc\wenjun\config\Swagger2.class

@@ -1,0 +1,6 @@
+cc\wenjun\common\client\StaticPageClient.class
+cc\wenjun\common\client\RedisFallBackFactory.class
+cc\wenjun\common\client\StaticPageFallBackFactory$1.class
+cc\wenjun\common\client\StaticPageFallBackFactory.class
+cc\wenjun\common\client\RedisFallBackFactory$1.class
+cc\wenjun\common\client\RedisClient.class
